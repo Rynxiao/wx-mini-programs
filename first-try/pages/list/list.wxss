@@ -1,0 +1,64 @@
+/**list.wxss**/
+.list-row-wrapper {
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.list-row {
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+}
+.list-row-hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.list-icon {
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+.list-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.message-dot {
+  width: 16rpx;
+  height: 16rpx;
+  position: absolute;
+  top: -4rpx;
+  right: -4rpx;
+  background-color: red;
+  border-radius: 50%;
+}
+.list-content {
+  flex: 1;
+  font-size: 14px;
+  padding: 10rpx 20rpx 0;
+}
+.list-content-layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.list-content-name {
+  flex: 1;
+}
+.list-content-brief {
+  flex: 1;
+}
+.list-content-title {
+  color: #000;
+}
+.list-content-time {
+  font-size: 12px;
+  float: right;
+  color: #999;
+}
+.list-content-brief > text {
+  font-size: 12px;
+  color: #777;
+}

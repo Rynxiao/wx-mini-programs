@@ -1,0 +1,72 @@
+/* components/bubble /bubble.wxss */
+.bubble-container {
+  position: relative;
+  display: flex;
+  padding: 20rpx;
+}
+.content {
+  max-width: 55%;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 6px 10px;
+  word-break: break-all;
+  font-size: 14px;
+}
+.icon {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  margin-right: 28rpx;
+}
+.caret-left {
+  width: 0;
+  height: 0;
+  border-width: 12rpx;
+  border-color: transparent #f0f0f0 transparent transparent;
+  border-style: solid;
+  position: absolute;
+  right: -28rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container-right {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20rpx;
+}
+.content-right {
+  max-width: 55%;
+  background-color: #aedb44;
+  border-radius: 4px;
+  padding: 6px 10px;
+  word-break: break-all;
+  font-size: 14px;
+}
+.content > text, .content-right > text {
+  line-height: 24px;
+}
+.icon-right {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  margin-left: 28rpx;
+}
+.photo {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.caret-right {
+  width: 0;
+  height: 0;
+  border-width: 12rpx;
+  border-color: transparent transparent transparent #aedb44;
+  border-style: solid;
+  position: absolute;
+  left: -28rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}

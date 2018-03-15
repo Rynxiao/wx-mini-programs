@@ -1,0 +1,46 @@
+/**chat.wxss**/
+@import "../../components/bubble/bubble.wxss";
+
+.chat-content {
+  width: 100%;
+  flex: 1;
+  overflow: scroll;
+}
+.chat-input {
+  width: 100%;
+}
+.chat-input-wrapper {
+  width: 100%;
+  display: flex; 
+  padding: 16rpx 0;
+  background-color: #f4f4f6;
+  border-top: 1rpx solid #d6d7d9;
+}
+.chat-input-record {
+
+}
+.chat-input-main {
+  flex: 1;
+  height: 100%;
+  padding: 0 16rpx;
+}
+.chat-input-main > input {
+  height: 46rpx;
+  line-height: 46rpx;
+  background-color: #fff;
+  border-radius: 12rpx;
+  padding: 10rpx;
+  border: 1rpx solid #d6d7d9;
+  font-size: 14px;
+}
+.chat-input-other {
+  width: 140rpx;
+}
+.chat-input-other > image {
+  margin-top: 14rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.chat-input-other > image:first-child {
+  margin-right: 20rpx;
+}

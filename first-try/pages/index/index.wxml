@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <button class='hiddenbtn' bindgetuserinfo='login' open-type='getUserInfo'>点击登录</button> -->
+  <button type="primary" bindtap="gotoList" size="mini">进入列表页面</button>
+</view>

@@ -1,0 +1,35 @@
+<!--chat.wxml-->
+<import src="../../components/bubble/bubble.wxml" />
+<view class="container">
+  <scroll-view 
+    scroll-y 
+    scroll-with-animation 
+    class="chat-content"  
+    scroll-top="{{ scrollTop }}"
+    scroll-into-view="{{ lastId }}">
+    <block wx:for="{{ messages }}" wx:key="messages{{ index }}" >
+      <template id="msg{{ index }}" is="bubble" data="{{ ...item }}" />
+    </block>
+  </scroll-view>
+  <form class="chat-input" id="hei">
+    <view class="chat-input-wrapper">
+      <view class="chat-input-record"></view>
+      <view class="chat-input-main">
+        <input 
+          value="{{ msg }}"
+          cursor-spacing="16" 
+          adjust-position="{{ true }}" 
+          cursor="16" 
+          confirm-type="send"
+          confirm-hold="{{ true }}"
+          bindinput="onInput"
+          bindconfirm="send"
+          bindfocus="onFocus" />
+      </view>
+      <view class="chat-input-other">
+        <image src="../../images/icons/smile.png" bindtap="send"></image>
+        <image src="../../images/icons/add.png"></image>
+      </view>
+    </view>
+  </form>
+</view>
